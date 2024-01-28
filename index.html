@@ -21,7 +21,7 @@
                             <p style="text-align:center">
                                 <name>Abhinav Narayan Harish</name>
                             </p>
-                            <p>I am a CS PhD student at University of Wisconsin Madison and I'm working with Professor Josiah Hanna. Prior to this, I was a Master's student with Professor Zsolt Kira working on RL for long-horizon tasks on home-rearrangement. As a part of my Master's thesis I worked on long-horizon RL in the context of home-rearrangement. I received my Bachelor's degree in Electrical Engineering with a minor in Computer Science from IITGN .</p> 
+                            <p>I am a CS PhD student at University of Wisconsin Madison working with Professor Josiah Hanna. Prior to this, I was a Master's student with Professor Zsolt Kira working on using Reinforcement Learning (RL) for long-horizon home-rearrangement in Habitat2.0. I received my Bachelor's degree in Electrical Engineering with a minor in Computer Science from IITGN .</p> 
                             <p>
                                 <!--At Google I've worked on <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://www.google.com/get/cardboard/jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, and <a href="https://www.youtube.com/watch?v=JSnB06um5r4">Glass</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I did my bachelors at the <a href="http://cs.toronto.edu">University of Toronto</a>.
                         I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.-->
@@ -47,7 +47,7 @@
                         <td style="padding:20px;width:100%;vertical-align:middle">
                             <heading>Research</heading>
                             <p>
-                                I am interested in the field of Computer Vision & Graphics and its application in Robotics. I am keen to work on problems lying in the interesection of these two fields.
+                                Broadly, my interests lie in the field of Reinforcement Learning (RL) and it's application in the field of Robotics. My ongoing research explores efficient training strategies to learn a single policy capable of performing rearrangement in diverse contexts. I'm interested in pushing the limits of single policy and exploring questions like - i) Is monolithic RL training more generalizable compared to Hierachical RL? ii) Can policies trained in hierarchical RL coordinate with each other during training?  
                             </p>
                         </td>
                     </tr>
@@ -105,6 +105,37 @@
                             <heading>Publications</heading>
                         </td>
                     </tr>
+                </tbody>
+            </table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;
+        margin-right:auto;margin-left:auto;">
+                <tbody>
+
+                    <tr>
+                        <td style="padding:20px;width:35%;vertical-align:middle">
+                            <img src='images/handoff_issue.png' width="250" height="150"></div>
+                        </td>
+                        <td width="75%" valign="middle">
+                            <p>
+                                <!-- <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167865518300473"> -->
+                                <papertitle>Skill-Chaining for Long-Horizon Rearrangement</papertitle>
+                                </a>
+                                <br>
+                                <strong>Abhinav Narayan Harish</strong>,
+                                <br>
+                                <em>
+                                    Master's thesis, Georgia Institute of Technology
+                                </em>
+                                <br>
+                                <a href="https://drive.google.com/file/d/1c54ABpfoJac1jz51-NISTnC-34thE5nj/view?usp=sharing">pdf</a> /
+                            </p>
+                            <p></p>
+                            <p>
+                                Given a set of pre-trained skills performing specific aspects of rearrangement , i.e Navigating, Picking up or Placing objects, we developed a hierarchical fine-tuning scheme that can fine-tune these policies simultaneously. Our method addresses the hand-off challenge in rearrangement where subsequent skills are not aligned (i.e the navigation skill-terminates too far from the couch). Our method demonstrates superior performance (about 13% in rearrangement success) over a static policy. 
+                            </p>
+                        </td>
+                    </tr>
+
                 </tbody>
             </table>
 
