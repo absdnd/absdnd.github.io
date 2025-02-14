@@ -121,7 +121,7 @@
                 <tbody>
                     <tr>
                         <td style="padding:20px;width:40%;vertical-align:middle">
-                            <img src='images/icra2025.png' width="250" height="120">
+                            <img src='images/icra2025.png' width="280" height="120">
                         </td>
                         <td width="60%" valign="middle">
                             <p>
@@ -151,10 +151,39 @@
                             </div>
                         </td>
                     </tr>
+                    <tr>
+                        <td style="padding:20px;width:40%;vertical-align:middle">
+                            <img src='images/rlc2024.png' width="280" height="120">
+                        </td>
+                        <td width="60%" valign="middle">
+                            <p>
+                                <papertitle>Replacing Implicit Regression with Classification in Policy Gradient Reinforcement Learning
+                                </papertitle>
+                                <br>
+                                Josiah P. Hanna, Brahma Pavse, <strong>Abhinav Narayan Harish</strong> 
+                                <br>
+                                <em>RLC 2024 (Finding the Frame Workshop)</em>
+                                <br>
+                                <a href="https://openreview.net/pdf?id=dHhkY5YAqu">pdf</a>
+                            </p>
+                            <!-- Right Facing Caret for toggling abstract with "Abstract" text -->
+                            <span onclick="toggleAbstract('abstract1')" style="cursor: pointer; font-size: 10px; color: black; font-weight: bold;">
+                                &#8594; <!-- Right Facing Caret -->
+                                <span style="font-size: 10px; margin-left: 10px;">Abstract</span>
+                            </span>
+                            <div id="abstract1" style="display:none; margin-top: 10px;">
+                                <p>
+                                    Stochastic policy gradient methods are a fundamental class of reinforcement learning algorithms. When using these algorithms for continuous control, it is common to parameterize the policy using a Gaussian distribution. In this paper, we show that the policy gradient with Gaussian policies can be viewed as the gradient of a weighted least-squares objective function. That is, policy gradient algorithms are implicitly implementing a form of regression. Several recent works have shown that reformulating regression problems as classification problems can improve learning. Inspired by these works, we investigate whether replacing this implicit regression with classification can improve the data efficiency and stability of policy learning. We introduce a novel policy gradient surrogate objective for softmax policies over a discretized action space. This surrogate objective uses a form of cross-entropy loss to replace the implicit least-squares loss found in the surrogate loss for Gaussian policies. We extend prior theoretical analysis of this loss to our policy gradient surrogate objective and provide experiments showing that this novel loss improves the data efficiency of stochastic policy gradient learning.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+
+
                     <!-- First Content -->
                     <tr>
                         <td style="padding:20px;width:40%;vertical-align:middle">
-                            <img src='images/aux_distill.png' width="250" height="120">
+                            <img src='images/aux_distill.png' width="280" height="120">
                         </td>
                         <td width="60%" valign="middle">
                             <p>
@@ -182,7 +211,7 @@
                     <!-- Second Content -->
                     <tr>
                         <td style="padding:20px;width:40%;vertical-align:middle">
-                            <img src='images/rearrangement.png' width="250" height="120">
+                            <img src='images/rearrangement.png' width="280" height="140">
                         </td>
                         <td width="60%" valign="middle">
                             <p>
@@ -210,7 +239,7 @@
                     <!-- Third Content -->
                     <tr>
                         <td style="padding:20px;width:40%;vertical-align:middle">
-                            <img src='images/RGL_teaser.gif' width="250" height="120">
+                            <img src='images/RGL_teaser.gif' width="280" height="120">
                         </td>
                         <td width="60%" valign="middle">
                             <p>
