@@ -1,0 +1,26 @@
+[
+  {
+    "role": "Graduate Researcher",
+    "organization": "University of Wisconsin–Madison",
+    "dates": "Jan 2026 – Present",
+    "details": "Addressing hallucinations in diffusion models, with Prof. Grigoris Chrysos."
+  },
+  {
+    "role": "Graduate Researcher (Reinforcement Learning)",
+    "organization": "University of Wisconsin–Madison",
+    "dates": "Aug 2023 – Present",
+    "details": "Sample-efficient reinforcement learning and sim-to-real generalization, with Prof. Josiah Hanna."
+  },
+  {
+    "role": "Research Intern",
+    "organization": "NVIDIA",
+    "dates": "May 2022 – Aug 2022",
+    "details": "Sim-to-real generalization of object detection on Omniverse Replicator, with Dr. Jonathan Tremblay."
+  },
+  {
+    "role": "Master's Thesis Student",
+    "organization": "Georgia Institute of Technology",
+    "dates": "Jan 2022 – Aug 2023",
+    "details": "Hierarchical RL and skill-chaining for embodied rearrangement (Habitat), with Prof. Zsolt Kira."
+  }
+]
