@@ -116,6 +116,16 @@ a:hover, a:focus { color: #f09228; }
 .research-directions li { line-height: 1.5; font-size: 13.5px; }
 .direction-title { font-weight: 700; }
 
+.internship-callout {
+  margin: 14px 0 0;
+  padding: 8px 12px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  background: #fdf3e3;
+  border-left: 3px solid #f09228;
+  border-radius: 3px;
+}
+
 /* ---------- Section headings ---------- */
 .section-heading {
   font-family: 'Lato', sans-serif;
