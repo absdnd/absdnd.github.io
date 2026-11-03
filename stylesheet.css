@@ -149,6 +149,16 @@ a:hover, a:focus { color: #f09228; }
 }
 .pub-entry:last-child { border-bottom: none; }
 
+.pub-group-heading {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b6657;
+  margin: 14px 0 0;
+}
+.pub-group-heading:first-child { margin-top: 0; }
+
 /* Fixed-size image box: preserves aspect ratio (no crushing), uniform alignment.
    Width matches the intro photo (200px) so publication images line up with it. */
 .pub-media {

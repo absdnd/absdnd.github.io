@@ -28,7 +28,7 @@
           </div>
           <ul class="intro-links">
             <li><a href="files/Abhinav_N_Harish_Research.pdf">CV</a></li>
-            <li><a href="https://scholar.google.com/citations?user=pw-CSfoAAAAJ&hl=en">Google Scholar</a></li>
+            <li><a href="https://scholar.google.com/citations?user=X32A1PYAAAAJ&hl=en">Google Scholar</a></li>
             <li><a href="https://github.com/absdnd">GitHub</a></li>
             <li class="intro-email">aharish2 [at] wisc [dot] edu</li>
           </ul>
@@ -54,8 +54,7 @@
             </li>
           </ol>
           <p class="internship-callout">
-            <strong>Looking for internships for Summer 2027</strong> — please
-            reach out if you see a fit.
+            <strong>Looking for Summer 2027 internships.</strong> Please reach out if you see a fit.
           </p>
         </div>
       </div>
@@ -127,9 +126,9 @@
 
       const meta = el('div', { class: 'pub-meta' }, [
         el('div', { class: 'pub-title' }, [pub.title]),
-        el('div', { class: 'pub-authors', html: pub.authors }),
+        pub.authors ? el('div', { class: 'pub-authors', html: pub.authors }) : null,
         el('div', { class: 'pub-venue' }, [pub.venue]),
-        el('div', { class: 'pub-links' }, links),
+        links.length ? el('div', { class: 'pub-links' }, links) : null,
       ]);
 
       if (pub.abstract && pub.abstract.trim()) {
@@ -182,7 +181,23 @@
       items.forEach(i => container.appendChild(renderer(i)));
     }
 
-    mount('publications-list', window.PUBLICATIONS, renderPublication,    'data/publications.js');
+    // Publications are grouped by authorship ("group": "first" | "co"),
+    // each group rendered under its own subheading in data-file order.
+    const PUB_GROUPS = [
+      { key: 'first', label: 'First-Author' },
+      { key: 'co',    label: 'Co-Authored' },
+    ];
+    if (Array.isArray(window.PUBLICATIONS)) {
+      const list = document.getElementById('publications-list');
+      PUB_GROUPS.forEach(g => {
+        const items = window.PUBLICATIONS.filter(p => (p.group || 'co') === g.key);
+        if (!items.length) return;
+        list.appendChild(el('h3', { class: 'pub-group-heading' }, [g.label]));
+        items.forEach(p => list.appendChild(renderPublication(p)));
+      });
+    } else {
+      mount('publications-list', window.PUBLICATIONS, renderPublication, 'data/publications.js');
+    }
     mount('experience-list',   window.EXPERIENCE,   renderTimelineEntry, 'data/experience.js');
     mount('education-list',    window.EDUCATION,    renderTimelineEntry, 'data/education.js');
   </script>
