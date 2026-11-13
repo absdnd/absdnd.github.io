@@ -41,6 +41,7 @@ window.PUBLICATIONS = [
     "venue": "WACV 2022",
     "links": [
       { "label": "pdf", "href": "https://arxiv.org/abs/2107.12859" },
+      { "label": "project page", "href": "https://absdnd.github.io/RGL_NET_Progressive_Part_Assembly/" },
       { "label": "code", "href": "https://github.com/absdnd/RGL_NET_Progressive_Part_Assembly" }
     ],
     "abstract": "We propose an assembly framework that can assemble a shape in a canonical order by progressively gathering information. Compared to prior frameworks, our method achieves up to 10% improvement in part accuracy and 15% improvement in connectivity accuracy."
