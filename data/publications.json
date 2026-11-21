@@ -1,14 +1,6 @@
 [
   {
     "group": "first",
-    "id": "iclr_2027_outcome_boundary",
-    "image": "images/publications/iclr_2027/outcome_boundary_gaussian4.png",
-    "title": "Theory of Outcome Boundary Prediction in a Deterministic Diffusion ODE",
-    "venue": "Under Review",
-    "links": []
-  },
-  {
-    "group": "first",
     "id": "eccv_2024_auxdistill",
     "image": "images/publications/eccv_2024/aux_distill.png",
     "title": "Reinforcement Learning via Auxiliary Task Distillation",
